@@ -24,7 +24,7 @@ type FireBaseNotifyService struct {
 
 func NewFireBaseNotifyService(serviceAccountKeyFile string,coroutineNum int32) *FireBaseNotifyService{
 	notifyService := &FireBaseNotifyService{}
-	notifyService.SetEventChanNum(coroutineNum)
+	notifyService.SetGoRouterNum(coroutineNum)
 	opt := option.WithCredentialsFile(serviceAccountKeyFile)
 
  	//,option.WithHTTPClient(NewHttpClient("http://192.168.0.5:1081"))
